@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/css/partials/navbar.css">
+<section class="header">
+
+    <div class="flex">
+       <a href="#home" class="logo">The Asteroids</a>
+    </div>
+ 
+    <nav class="navbar">
+      <% Object.keys(navbar).forEach(text => { %>
+       <a href="<%= navbar[text] %>" class="<% if (text == title) { %>active<% } %>"><%= text %></a>
+      <% }) %>
+    </nav>
+ 
+ </section>

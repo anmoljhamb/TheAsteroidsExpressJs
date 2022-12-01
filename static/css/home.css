@@ -1,0 +1,214 @@
+.container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--sub-color);
+    padding: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    color: var(--main-color);
+}
+
+.container .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid .item {
+    border-radius: 10px;
+    background-color: var(--white);
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.2s linear;
+}
+
+.grid .item .img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.grid .item .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid .item h3 {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.grid .item p {
+    font-size: 12px;
+    margin: 10px;
+}
+
+.grid .item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.gallery img {
+    height: 40rem;
+    width: 60rem;
+    border-radius: .5rem;
+    object-fit: cover;
+    margin-bottom: 4rem;
+    user-select: none;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--sub-color);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--white);
+}
+
+.gallery h1 {
+    font-size: 60px;
+    font-family: 'Rancho', cursive;
+    color: var(--sub-color);
+    text-align: center;
+}
+
+.contact .row {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact .row .faq {
+    flex: 1 1 40rem;
+}
+
+.contact .row form h3 {
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    padding: 1.2rem;
+    color: var(--main-color);
+    background-color: var(--sub-color);
+    font-size: 2.2rem;
+    text-transform: capitalize;
+}
+
+.contact .row form .box {
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: var(--border);
+    font-size: 1.8rem;
+    color: var(--sub-color);
+    background: var(--main-color);
+    width: 100%;
+}
+
+.contact .row form .box::placeholder {
+    color: rgba(220, 198, 156, .6);
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .faq .title {
+    padding-bottom: .5rem;
+    font-size: 2.5rem;
+    color: var(--sub-color);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.contact .row .faq .box {
+    border-radius: .5rem;
+    border: var(--border);
+    margin-top: 2rem;
+}
+
+.contact .row .faq .box h3 {
+    background-color: var(--sub-color);
+    color: var(--main-color);
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.contact .row .faq .box p {
+    padding: 1.5rem 2rem;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--sub-color);
+    display: none;
+}
+
+.contact .row .faq .box.active p {
+    display: inline-block;
+}
+
+
+.reviews {
+    padding: 20px;
+    background-color: var(--sub-color);
+    color: var(--main-color);
+}
+
+.reviews .box {
+    text-align: center;
+    user-select: none;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.reviews .box img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .box h3 {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.reviews .box p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+
+.reviews h1 {
+    text-align: center;
+    color: var(--white);
+    font-size: 30px;
+}

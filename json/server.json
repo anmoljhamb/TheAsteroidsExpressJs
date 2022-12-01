@@ -1,0 +1,10 @@
+{
+    "hostname": "localhost",
+    "port": 5678,
+    "view engine": "ejs",
+    "static": "./static",
+    "views": "./templates",
+    "dbName": "asteroids",
+    "dbHost": "0.0.0.0",
+    "dbPort": "27017"
+}

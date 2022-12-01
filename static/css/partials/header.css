@@ -1,0 +1,77 @@
+.home .box img {
+    border-radius: .5rem;
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .box .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.home .box .flex h3 {
+    font-size: 2.5rem;
+    color: var(--sub-color);
+    text-transform: capitalize;
+}
+
+.swiper-button-prev {
+    left: 0%;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 3rem 2rem;
+    background-color: var(--white);
+    top: 40%;
+    opacity: .7;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+}
+
+.availability form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.availability form .flex .box {
+    flex: 1 1 20rem;
+}
+
+.availability form .flex .box p {
+    font-size: 2rem;
+    color: var(--sub-color);
+}
+
+.availability form .flex .box .input {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    border-bottom: var(--border);
+    margin: 1rem 0;
+}
+
+.availability form .flex .box input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}

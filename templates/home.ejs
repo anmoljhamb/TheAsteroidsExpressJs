@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base_theme.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+    <%- include('partials/header') %>
+    <section>
+        <div class="container">
+            <h1>Checkout Our Featured Places</h1>
+            <div class="grid">
+                <% featured.forEach(place => { %>
+                    <div class="item" onclick='openLink("<%= place._id %>")'>
+                        <h3><%= place.name %> </h3>
+                        <div class="img">
+                            <img src="<%= place.images[0] %> " alt="">
+                        </div>
+                        <p>
+                            <%= place.fact %>
+                        </p>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <h1>Gallery</h1>
+        <% arr = gallery %> 
+        <%- include('partials/gallery') %> 
+    </section>
+    <%- include("partials/contact") %> 
+    <section class="reviews" id="testimonials">
+
+        <h1>Testimonials</h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+                <% reviews.forEach(review => { %>
+                    <div class="swiper-slide box">
+                        <img src="<%= review['img'] %>" alt="">
+                        <h3><%= review['name'] %></h3>
+                        <p><%= review['review'] %></p>
+                    </div>
+                <% }) %>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <%- include('partials/footer') %> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/home.js"></script>
+</body>
+
+</html>

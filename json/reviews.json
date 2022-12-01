@@ -1,0 +1,27 @@
+[
+    {
+        "img": "images/pic-1.png",
+        "name": "John Doe",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+    },
+    {
+        "img": "images/pic-2.png",
+        "name": "John Doe",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+    },
+    {
+        "img": "images/pic-3.png",
+        "name": "John Doe",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+    },
+    {
+        "img": "images/pic-4.png",
+        "name": "John Doe",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+    },
+    {
+        "img": "images/pic-5.png",
+        "name": "John Doe",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+    }
+]

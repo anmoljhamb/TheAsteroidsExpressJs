@@ -1,0 +1,9 @@
+{
+    "home": "/home",
+    "blog": "/blog",
+    "explore": "/explore",
+    "about": "/about",
+    "contact us": "/home#contact",
+    "testimonials": "/home#testimonials",
+    "gallery": "/home#gallery"
+}

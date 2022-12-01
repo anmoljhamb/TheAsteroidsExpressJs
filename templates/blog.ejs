@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base_theme.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+    <% imgUrl = "/images/blog.jpg" %> 
+    <% imageText = "Blogs" %> 
+    <%- include('partials/bgImageWithText') %>
+
+    <section>
+        <div class="container">
+            <h1>Checkout Our Posts</h1>
+            <div class="grid">
+                <% places.forEach(place => { %>
+                    <div class="item" onclick='openLink("<%= place._id %>")'>
+                        <h3><%= place.name %> </h3>
+                        <div class="img">
+                            <img src="<%= place.images[0] %> " alt="">
+                        </div>
+                        <p>
+                            <%= place.fact %>
+                        </p>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

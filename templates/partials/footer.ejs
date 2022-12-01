@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/partials/footer.css">
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="tel:1234567890"><i class="fas fa-phone"></i> +123-456-7890</a>
+            <a href="tel:1112223333"><i class="fas fa-phone"></i> +111-222-3333</a>
+            <a href="mailto:shakhanas@gmail.com"><i class="fas fa-envelope"></i> talkto@theasteroids.com</a>
+        </div>
+
+        <div class="box">
+            <% Object.keys(navbar).forEach(text => { %>
+                <a href="<%= navbar[text] %>" class="<% if (text == title) { %>active<% } %>"><%= text %></a>
+               <% }) %>
+        </div>
+
+        <div class="box">
+            <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+            <a href="#">twitter <i class="fab fa-twitter"></i></a>
+            <a href="#">instagram <i class="fab fa-instagram"></i></a>
+            <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+        </div>
+
+    </div>
+
+    <div class="credit">&copy; copyright @ 2022 by team The Cosmos | all rights reseved!</div>
+
+</section>

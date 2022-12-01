@@ -1,0 +1,51 @@
+.container{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--sub-color);
+}
+
+
+.container .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    gap: 10px;
+}
+
+
+.container .item:nth-child(2n)
+{
+    flex-direction: row-reverse;
+}
+
+
+.container .image {
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+
+
+.container .image img:hover {
+    transform: scale(1.2);
+}
+
+
+.container .item .text{
+    width: 50%;
+    font-size: 20px;
+    text-align: justify;
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+:root {
+    --primary: #dfe6e9;
+    --secondary: #094b65;
+    --teritary: #0984e3;
+}
+
+
+.header h3 {
+    font-size: 150px;
+    font-family: 'Rancho', cursive;
+    color: white;
+}
+
+.our_story {
+    background-color: var(--white);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our_story .text h3 {
+    font-size: 80px;
+    font-family: 'Rancho', cursive;
+    margin: 20px;
+}
+
+.our_story .container {
+    display: grid;
+    height: 100%;
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    place-items: center;
+}
+
+.our_story .right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.our_story .right h3 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.our_story .right p {
+    width: 80%;
+    font-size: 25px;
+}
+
+.our_story .left {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.our_story .left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transform: 0.3s linear;
+}
+
+.our_story .left img:hover {
+    transform: scale(1.2);
+}
+
+.fun_facts {
+    margin-top: 30px;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fun_facts::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #094b65;
+    content: "";
+    z-index: -10;
+    background-image: url("/images/about_fun_facts.jpg");
+}
+
+.fun_facts::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -5;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.fun_facts .intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.fun_facts .intro h3 {
+    font-size: 80px;
+    font-family: 'Rancho', cursive;
+    color: white;
+    margin: 20px;
+}
+
+.fun_facts .intro p {
+    font-size: 20px;
+    color: white;
+}
+
+.fun_facts .container {
+    width: 70%;
+    display: grid;
+    margin-top: 50px;
+    padding: 60px 40px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.fun_facts .container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.fun_facts .container .content i {
+    font-size: 50px;
+}
+
+.fun_facts .container .content h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fun_facts .container .content p {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

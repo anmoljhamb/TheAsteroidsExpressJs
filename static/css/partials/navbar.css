@@ -1,0 +1,50 @@
+.header {
+    padding-bottom: 0;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header .flex .logo {
+    color: var(--sub-color);
+    font-size: 2.5rem;
+}
+
+.header .flex .btn {
+    margin-top: 0;
+}
+
+.header .flex .fa-bars {
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--sub-color);
+    display: none;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--sub-color);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.header .navbar a {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+
+.header a.active,
+.header .navbar a:hover {
+    background-color: var(--main-color);
+    color: var(--sub-color);
+}

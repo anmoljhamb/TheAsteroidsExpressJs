@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base_theme.css">
+    <link rel="stylesheet" href="/css/getBlog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+    <% imgUrl = "/images/blog.jpg" %> 
+    <% imageText = "Blog" %> 
+    <%- include('partials/bgImageWithText') %>
+
+    <section>
+        <div class="container">
+            <h1><%= place.name %> </h1>
+            <% for ( i=0; i<place.texts.length; i++ ) {%> 
+                <% image = place.images[i] %> 
+                <% text = place.texts[i] %> 
+                <div class="item">
+                    <% if (image) { %>
+                        <div class="image">
+                            <img src="<%= image %>" alt="">
+                        </div>
+                    <% } %>
+                    <div class="text">
+                        <%= text %> 
+                    </div>
+                </div>
+            <% } %> 
+        </div>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

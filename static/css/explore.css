@@ -1,0 +1,69 @@
+.container{
+    width: 100%;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container .item{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container .item .imgBg::before,
+.container .item .imgBg{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: var(--img);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container .item:hover{
+    cursor: pointer;
+}
+
+
+.container .item:hover .imgBg::before {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.46));
+    cursor: pointer;
+}
+
+
+.container .item .details {
+    padding: 20px;
+    background-color: var(--sub-color);
+    font-size: 20px;
+    position: absolute;
+    transform: translateX(-100%);
+    border-radius: 10px;
+    transition: all 0.2s linear;
+}
+
+.container .item:hover .details{
+    transform: translateX(0);
+}
+
+.item .details .placeName{
+    color: white;
+    font-weight: bold;
+}
+
+
+.placeId{
+    display: none;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+:root {
+    --main-color: #2B3A55;
+    --sub-color: #CE7777;
+    --white: #fff;
+    --secondaryAccent: #E8C4C4;
+    --border: .1rem solid rgba(220, 198, 156, .3);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+*::selection {
+    background-color: var(--sub-color);
+    color: var(--main-color);
+}
+
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--sub-color);
+    border-radius: 5rem;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border: var(--border);
+    font-size: 1.8rem;
+    color: var(--sub-color);
+    text-align: center;
+    text-transform: capitalize;
+    transition: .2s linear;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+}
+
+.btn:hover {
+    border-radius: 5rem;
+    background-color: var(--sub-color);
+    color: var(--main-color);
+}

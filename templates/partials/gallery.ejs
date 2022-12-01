@@ -1,0 +1,8 @@
+<div class="swiper gallery-slider">
+   <div class="swiper-wrapper">
+      <% arr.forEach(place => { %>
+         <img src="<%= place.images[0]  %>" alt="" class="swiper-slide">
+         <% }) %>
+   </div>
+   <div class="swiper-pagination"></div>
+</div>

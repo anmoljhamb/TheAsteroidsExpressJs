@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/base_theme.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+
+    <% imgUrl = "/images/about_page_bg.jpg" %>
+    <% imageText = "About Us" %> 
+    <%- include('partials/bgImageWithText') %> 
+
+    <section>
+        <div class="our_story">
+            <div class="text">
+                <h3>Our Story</h3>
+            </div>
+            <div class="container">
+                <div class="left">
+                    <img src="/images/about-img.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h3>All About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta voluptates suscipit mollitia dolorum omnis minus veniam quia esse aut nesciunt?</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempora similique debitis? Quis illo ipsa maxime ratione cumque quibusdam quia.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="fun_facts">
+            <div class="bg_image"></div>
+            <div class="intro">
+                <h3>Fun Facts</h3>
+                <p>Know some fun facts about our agency.</p>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <i class="fas fa-camera-retro facts-icon"></i>
+                    <h3>1220</h3>
+                    <p>Photos Taken</p>
+                </div>
+                <div class="content">
+                    <i class="fas fa-umbrella-beach  facts-icon"></i>
+                    <h3>450</h3>
+                    <p>beaches visited</p>
+                </div>
+                <div class="content">
+                    <i class="fas fa-mountain facts-icon"></i>
+                    <h3>45</h3>
+                    <p>mountains climbed</p>
+                </div>
+                <div class="content">
+                    <i class="fas fa-ship facts-icon"></i>
+                    <h3>120</h3>
+                    <p>cruises organised</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
