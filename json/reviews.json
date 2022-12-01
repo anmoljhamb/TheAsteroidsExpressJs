@@ -1,27 +1,27 @@
 [
     {
         "img": "images/pic-1.png",
-        "name": "John Doe",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+        "name": "keshav",
+        "review":"A simple and faster solution to plan our travel plan,the asteroids is one of the most useful websites on web"
     },
     {
         "img": "images/pic-2.png",
-        "name": "John Doe",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+        "name": "Sanchit",
+        "review": "Earlier i used to face lots of trouble while planning my tour,but after visiting this website it is easier for me to plan my travel"
     },
     {
         "img": "images/pic-3.png",
-        "name": "John Doe",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+        "name": "Vivek",
+        "review": "It made our travel plan simpler and enjoyable"
     },
     {
         "img": "images/pic-4.png",
-        "name": "John Doe",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+        "name": "Parth",
+        "review": "It helped me to plan my travel "
     },
     {
         "img": "images/pic-5.png",
-        "name": "John Doe",
-        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates blanditiis optio dignissimos eaque aliquid explicabo."
+        "name": "yash",
+        "review":"I found this website very helpful"
     }
 ]
