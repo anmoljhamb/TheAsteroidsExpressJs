@@ -3,7 +3,7 @@ const path = require("path")
 
 
 const readJson = (fileName) => {
-    const file = fs.readFileSync(path.join(__dirname, fileName))
+    const file = fs.readFileSync(path.join(__dirname, "..", fileName))
     return JSON.parse(file)
 }
 
